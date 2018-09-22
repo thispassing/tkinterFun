@@ -4,8 +4,14 @@ window=Tk()
 
 def conversion():
     grams=float(e1_value.get())*1000
+    grams=round(grams,2)
+    grams=(str(grams)+" gm")
     pounds=float(e1_value.get())*2.20462
+    pounds=round(pounds, 2)
+    pounds=(str(pounds)+" lbs")
     ounces=float(e1_value.get())*35.274
+    ounces=round(ounces,2)
+    ounces=(str(ounces)+" oz")
     t1.delete("1.0", END)
     t1.insert(END,grams)
     t2.delete("1.0", END)
